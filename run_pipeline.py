@@ -1,11 +1,13 @@
 # run_pipeline.py
 
 import os
+import json
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
-from notice_pipeline import process_notice
+from notice_pipeline import process_notice, normalize_notice
+
 
 # -------------------------------------
 # CONFIG
@@ -18,6 +20,8 @@ DOWNLOAD_FOLDER = "notices"
 
 # change this if you want more notices
 MAX_NOTICES = 10
+
+OUTPUT_FILE = "notices_data.json"
 
 os.makedirs(DOWNLOAD_FOLDER, exist_ok=True)
 
@@ -83,6 +87,19 @@ def download_pdf(url):
 
 
 # -------------------------------------
+# SAVE JSON DATASET
+# -------------------------------------
+
+def save_results(data):
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+
+        json.dump(data, f, ensure_ascii=False, indent=2)
+
+    print("\nJSON dataset saved to:", OUTPUT_FILE)
+
+
+# -------------------------------------
 # MAIN PIPELINE
 # -------------------------------------
 
@@ -100,11 +117,17 @@ def main():
 
         result = process_notice(pdf_path)
 
-        results.append(result)
+        # normalize structure
+        notice = normalize_notice(result)
+
+        results.append(notice)
 
         print("\n----- RESULT -----\n")
 
-        print(result)
+        print(notice)
+
+    # save JSON dataset
+    save_results(results)
 
     print("\n===== PIPELINE COMPLETE =====\n")
 

@@ -3,79 +3,72 @@
 import re
 
 
-NEPALI_DIGITS = {
-    "०": "0",
-    "१": "1",
-    "२": "2",
-    "३": "3",
-    "४": "4",
-    "५": "5",
-    "६": "6",
-    "७": "7",
-    "८": "8",
-    "९": "9"
-}
+def extract_vacancy_number(text):
+    """
+    Extract realistic vacancy numbers from text.
+    Ignore advertisement numbers, years, and dates.
+    """
 
+    numbers = re.findall(r"\d+", text)
 
-def nepali_to_int(text):
+    for n in numbers:
 
-    for n, e in NEPALI_DIGITS.items():
-        text = text.replace(n, e)
+        num = int(n)
 
-    nums = re.findall(r'\d+', text)
+        # Ignore years like 2076, 2083 etc
+        if num > 100:
+            continue
 
-    if nums:
-        return int(nums[0])
+        # Ignore 0
+        if num <= 0:
+            continue
+
+        return num
 
     return None
 
 
-def parse_vacancy_rows(table_text):
+def parse_vacancy_rows(tables):
 
-    rows = table_text.split("\n")
+    rows = []
 
-    vacancies = []
+    for table in tables:
 
-    current_adv = None
+        for row in table:
 
-    for row in rows:
+            row_text = " ".join([str(c) for c in row if c])
 
-        cols = [c.strip() for c in row.split("|")]
+            # detect advertisement number
+            adv_match = re.search(r"\d{4,5}/\d{2,4}-\d{2,4}", row_text)
 
-        if len(cols) < 3:
-            continue
+            if not adv_match:
+                continue
 
-        # detect advertisement number
-        for col in cols:
+            advertisement_no = adv_match.group()
 
-            if re.search(r'\d{5}/\d{3}-\d{2}', col):
-                current_adv = col
+            vacancy = extract_vacancy_number(row_text)
 
-        service = None
-        vacancy = None
+            if vacancy is None:
+                continue
 
-        for col in cols:
+            # detect service type
+            service = None
 
-            if "न्याय" in col:
-                service = "न्याय"
-
-            elif "प्रशासन" in col:
+            if "प्रशासन" in row_text:
                 service = "प्रशासन"
 
-            elif "लेखा" in col:
+            elif "लेखा" in row_text:
                 service = "लेखा"
 
-            num = nepali_to_int(col)
+            elif "न्याय" in row_text:
+                service = "न्याय"
 
-            if num:
-                vacancy = num
+            rows.append(
+                {
+                    "advertisement_no": advertisement_no,
+                    "service": service,
+                    "vacancies": vacancy,
+                }
+            )
 
-        if current_adv and vacancy:
-
-            vacancies.append({
-                "advertisement_no": current_adv,
-                "service": service,
-                "vacancies": vacancy
-            })
-
-    return vacancies
+    return rows
