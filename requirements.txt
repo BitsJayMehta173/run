@@ -1,0 +1,28 @@
+# HTTP requests
+requests
+
+# HTML parsing
+beautifulsoup4
+
+# PDF processing
+pymupdf
+
+# OCR support
+pytesseract
+pdf2image
+Pillow
+
+# Table extraction from PDFs
+camelot-py[cv]
+
+# LLM API (Groq)
+groq
+
+# Environment variables
+python-dotenv
+
+# Data handling
+pandas
+
+# Optional: better Unicode handling
+regex

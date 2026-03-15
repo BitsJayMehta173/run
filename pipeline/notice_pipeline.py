@@ -2,13 +2,12 @@
 
 import fitz
 
-from ocr_reader import extract_text_ocr
-from notice_classifier import classify_notice
-from table_extractor import extract_tables
-from table_parser import parse_vacancy_rows
-from vacancy_aggregator import aggregate_vacancies
-from llm_notice_parser import analyze_notice_with_llm
-
+from utils.ocr_reader import extract_text_ocr
+from parsers.table_extractor import extract_tables
+from parsers.table_parser import parse_vacancy_rows
+from parsers.vacancy_aggregator import aggregate_vacancies
+from pipeline.llm_notice_parser import analyze_notice_with_llm
+from pipeline.notice_classifier import classify_notice
 
 # ---------------------------------
 # Extract text from PDF

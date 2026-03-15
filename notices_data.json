@@ -1,19 +1,6 @@
 [
   {
-    "file": "notices\\84_Bardibas.pdf",
-    "type": "exam",
-    "organization": "Nepal Army",
-    "post": "Military Position",
-    "vacancies": 217,
-    "application_deadline": "",
-    "exam_date": "2082 Chaitra 21",
-    "result_date": "",
-    "summary": "नेपाली सेनाको सैन्य पदको ललखित परीक्षाको परीक्षा भवन कायम गररएको सूचना",
-    "description": "The Nepal Army has announced the examination schedule for the military position. The exam will be held on 2082 Chaitra 21 at 11:00 AM and will last for 2 hours and 30 minutes. The exam will be conducted at the designated exam center, and candidates are required to bring their admit card and a valid ID. The exam will consist of multiple-choice questions, and candidates are advised to arrive at the exam center at least 2 hours prior to the exam start time.",
-    "source_pdf": "notices\\84_Bardibas.pdf"
-  },
-  {
-    "file": "notices\\Bolpatra_Notice.pdf",
+    "file": "notices\\परीक्षा_सञ्चालन_सूचना_2077-08-25.pdf",
     "type": "general",
     "organization": "",
     "post": "",
@@ -23,7 +10,59 @@
     "result_date": "",
     "summary": "",
     "description": "",
-    "source_pdf": "notices\\Bolpatra_Notice.pdf"
+    "source_pdf": "notices\\परीक्षा_सञ्चालन_सूचना_2077-08-25.pdf"
+  },
+  {
+    "file": "notices\\हाइवे_अन्तरवार्ता_सूचना.pdf",
+    "type": "general",
+    "organization": "",
+    "post": "",
+    "vacancies": 0,
+    "application_deadline": "",
+    "exam_date": "",
+    "result_date": "",
+    "summary": "",
+    "description": "",
+    "source_pdf": "notices\\हाइवे_अन्तरवार्ता_सूचना.pdf"
+  },
+  {
+    "file": "notices\\kharidar_patyakram.pdf",
+    "type": "syllabus",
+    "organization": "Public Service Commission",
+    "post": "Kharidhar or So Sarah",
+    "vacancies": 0,
+    "application_deadline": "",
+    "exam_date": "",
+    "result_date": "",
+    "summary": "खरिदार वा सो सरह पदको पाठ्यक्रम सम्बन्धी सूचना",
+    "description": "The Public Service Commission has published a notice regarding the syllabus for the post of Kharidhar or So Sarah. The revised syllabus for the open and inclusive competitive examination has already been published on the commission's website. The examination will be conducted according to this syllabus. This notice is published to inform all concerned about the syllabus.",
+    "source_pdf": "notices\\kharidar_patyakram.pdf"
+  },
+  {
+    "file": "notices\\लेखाको_परीक्षा_केन्द्रको_सूचना_११.pdf",
+    "type": "exam",
+    "organization": "रा.प. वि. (अप्राविविक)",
+    "post": "सेवा, सिउहः प्रशासन, लेखा",
+    "vacancies": 0,
+    "application_deadline": "",
+    "exam_date": "२०७८।११।११",
+    "result_date": "",
+    "summary": "स्वीकृत नामावली सहितको परीक्षा केन्द्र प्रकाशन गररएको सूचना",
+    "description": "The notice is about the publication of the exam center for the candidates who have been selected for the exam. The exam is scheduled to take place on २०७८।११।११ at २:०० बजे. The candidates are required to report to the exam center at the specified time. The notice also provides the details of the exam center and the room number for each candidate.",
+    "source_pdf": "notices\\लेखाको_परीक्षा_केन्द्रको_सूचना_११.pdf"
+  },
+  {
+    "file": "notices\\नेपाल_इञ्जी_सिभिल_जनरल_सूचना.pdf",
+    "type": "interview",
+    "organization": "Lok Sewa Aayog",
+    "post": "Sub Engineer",
+    "vacancies": 1,
+    "application_deadline": "",
+    "exam_date": "",
+    "result_date": "",
+    "summary": "अन्तरवार्ाा कार्ाक्रम र्ोककएको सूचना",
+    "description": "The Public Service Commission of Nepal has announced the interview schedule for the post of Sub Engineer. The interview will be held on 2079/01/04 at 11:00 AM. The selected candidates are required to bring their documents and certificates to the interview. The commission has also informed that the interview will be conducted in Pokhara.",
+    "source_pdf": "notices\\नेपाल_इञ्जी_सिभिल_जनरल_सूचना.pdf"
   },
   {
     "file": "notices\\suchana_new121.pdf",
@@ -39,33 +78,20 @@
     "source_pdf": "notices\\suchana_new121.pdf"
   },
   {
-    "file": "notices\\20.pdf",
-    "type": "general",
-    "organization": "",
-    "post": "",
-    "vacancies": 0,
-    "application_deadline": "",
-    "exam_date": "",
-    "result_date": "",
-    "summary": "",
-    "description": "",
-    "source_pdf": "notices\\20.pdf"
-  },
-  {
-    "file": "notices\\सूचना12.pdf",
-    "type": "exam",
+    "file": "notices\\2082-10-28_Bueltin_28.pdf",
+    "type": "vacancy",
     "organization": "Lok Sewa Aayog (Public Service Commission)",
-    "post": "Nepal Engineering Service, Mechanical Group, Non-Gazetted, First Class, Technical Posts",
-    "vacancies": 0,
-    "application_deadline": "",
-    "exam_date": "2078-07-08",
+    "post": "Various positions",
+    "vacancies": 24,
+    "application_deadline": "2082/12/03",
+    "exam_date": "",
     "result_date": "",
-    "summary": "परीक्षा रद्द गररएको सूचना",
-    "description": "The Public Service Commission of Nepal has cancelled the examination for the posts of Nepal Engineering Service, Mechanical Group, due to the candidates not meeting the minimum qualification marks. The examination was held on 2078-07-08 at the Kathmandu office. The decision to cancel the examination was made based on the commission's judgment. This notice is published to inform all concerned parties.",
-    "source_pdf": "notices\\सूचना12.pdf"
+    "summary": "जेष्ठता र कायनसम्पादन मूल्याङ्कनद्वारा हुने बढुवाको सूचना",
+    "description": "The Public Service Commission of Nepal has announced vacancies for various positions, including supervisors, inspectors, and computer operators. The vacancies are open to candidates who have completed their secondary education and have relevant work experience. The application deadline is 2082/12/03, and the selection process will be based on seniority and performance evaluation.",
+    "source_pdf": "notices\\2082-10-28_Bueltin_28.pdf"
   },
   {
-    "file": "notices\\letter_pad_with_stamp_parichha_chanut1.pdf",
+    "file": "notices\\रद्द_सूचना_2081_3_131.pdf",
     "type": "general",
     "organization": "",
     "post": "",
@@ -75,58 +101,32 @@
     "result_date": "",
     "summary": "",
     "description": "",
-    "source_pdf": "notices\\letter_pad_with_stamp_parichha_chanut1.pdf"
+    "source_pdf": "notices\\रद्द_सूचना_2081_3_131.pdf"
   },
   {
-    "file": "notices\\परीक्षा_स्थगित_सूचना_2078-06-01_(1).pdf",
-    "type": "general",
-    "organization": "",
-    "post": "",
-    "vacancies": 0,
-    "application_deadline": "",
-    "exam_date": "",
-    "result_date": "",
-    "summary": "",
-    "description": "",
-    "source_pdf": "notices\\परीक्षा_स्थगित_सूचना_2078-06-01_(1).pdf"
-  },
-  {
-    "file": "notices\\परीक्षा_केन्द्र_संशोधन_(1).pdf",
+    "file": "notices\\118_लिखित_परीक्षा_स्थगित_गरिएको_सूचना.pdf",
     "type": "exam",
-    "organization": "Lok Sewa Aayog (Public Service Commission)",
-    "post": "Engineer",
-    "vacancies": 0,
-    "application_deadline": "",
-    "exam_date": "2078-11-13 and 2078-11-20",
-    "result_date": "",
-    "summary": "परीक्षा केन्द्र पररवर्तन सम्बन्द्धी सूचना",
-    "description": "The Public Service Commission has announced changes to the examination centers for the upcoming engineer exams. The exams will be held on 2078-11-13 and 2078-11-20. The new examination centers have been assigned to the candidates. The commission has also notified that the examination schedule and other details remain the same.",
-    "source_pdf": "notices\\परीक्षा_केन्द्र_संशोधन_(1).pdf"
-  },
-  {
-    "file": "notices\\राजश्‍व_अन्तरवार्ता_सूचना.pdf",
-    "type": "general",
-    "organization": "",
-    "post": "",
-    "vacancies": 0,
-    "application_deadline": "",
-    "exam_date": "",
-    "result_date": "",
-    "summary": "",
-    "description": "",
-    "source_pdf": "notices\\राजश्‍व_अन्तरवार्ता_सूचना.pdf"
-  },
-  {
-    "file": "notices\\राजस्व_सूचना.pdf",
-    "type": "interview",
     "organization": "Public Service Commission",
-    "post": "Naib Subba or equivalent",
-    "vacancies": 43,
+    "post": "Various",
+    "vacancies": 0,
     "application_deadline": "",
-    "exam_date": "",
+    "exam_date": "2076 Chaitra 15 to 2076 Chaitra 26",
     "result_date": "",
-    "summary": "अन्तरवार्ाा कार्ाक्रम र्ोककएको सूचना",
-    "description": "The Public Service Commission of Nepal has announced the schedule for the interview of candidates who have been selected for the post of Naib Subba or equivalent. The interview will be held on various dates and times, and candidates are required to bring certain documents with them. The commission has also provided a list of selected candidates and their respective interview schedules.",
-    "source_pdf": "notices\\राजस्व_सूचना.pdf"
+    "summary": "लिलित परीक्षा कार्यक्रम स्थलित िररएको सूचना",
+    "description": "The Public Service Commission has announced the schedule for various exams, including the security service and general service exams, which will be held from 2076 Chaitra 15 to 2076 Chaitra 26. The exams were previously postponed due to the COVID-19 pandemic. The commission has now decided to conduct the exams as per the original schedule.",
+    "source_pdf": "notices\\118_लिखित_परीक्षा_स्थगित_गरिएको_सूचना.pdf"
+  },
+  {
+    "file": "notices\\परीक्षा_कार्यक्रम_प्राबिधिक_अधिकृत.pdf",
+    "type": "exam",
+    "organization": "Public Service Commission",
+    "post": "Various Positions",
+    "vacancies": 0,
+    "application_deadline": "",
+    "exam_date": "2076.11.28 to 2076.12.25",
+    "result_date": "",
+    "summary": "रा.प. तृतीय श्रेणी (प्राधिधिक) तथा स्वास्थ्य सेिाका आठौं र सातौं तहका पिको आ.प्र., िुिा तथा समावेशी  प्रद्वतयोद्वगतात्मक द्विखित परीक्षा",
+    "description": "The Public Service Commission of Nepal is conducting a written examination for various positions, including technical and health services. The exam will be held from 2076.11.28 to 2076.12.25 at different centers in Kathmandu. Candidates are required to bring their admit card, citizenship certificate, and other necessary documents to the exam center.",
+    "source_pdf": "notices\\परीक्षा_कार्यक्रम_प्राबिधिक_अधिकृत.pdf"
   }
 ]

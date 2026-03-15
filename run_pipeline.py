@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
-from notice_pipeline import process_notice, normalize_notice
+from pipeline.notice_pipeline import process_notice, normalize_notice
 
 
 # -------------------------------------
@@ -18,7 +18,7 @@ NOTICE_PAGE = "https://psc.gov.np/category/notice/"
 
 DOWNLOAD_FOLDER = "notices"
 
-# change this if you want more notices
+# Change this if you want more notices
 MAX_NOTICES = 10
 
 OUTPUT_FILE = "notices_data.json"
@@ -34,7 +34,12 @@ def get_notice_links():
 
     print("Fetching notice page...")
 
-    response = requests.get(NOTICE_PAGE)
+    try:
+        response = requests.get(NOTICE_PAGE, timeout=30)
+        response.raise_for_status()
+    except Exception as e:
+        print("Failed to fetch notice page:", e)
+        return []
 
     soup = BeautifulSoup(response.text, "html.parser")
 
@@ -50,6 +55,7 @@ def get_notice_links():
 
             links.append(full_link)
 
+    # remove duplicates
     links = list(set(links))
 
     # limit number of notices
@@ -61,7 +67,7 @@ def get_notice_links():
 
 
 # -------------------------------------
-# DOWNLOAD
+# DOWNLOAD PDF
 # -------------------------------------
 
 def download_pdf(url):
@@ -78,10 +84,15 @@ def download_pdf(url):
 
     print("Downloading:", filename)
 
-    r = requests.get(url)
+    try:
+        r = requests.get(url, timeout=60)
 
-    with open(filepath, "wb") as f:
-        f.write(r.content)
+        with open(filepath, "wb") as f:
+            f.write(r.content)
+
+    except Exception as e:
+        print("Download failed:", e)
+        return None
 
     return filepath
 
@@ -109,15 +120,21 @@ def main():
 
     links = get_notice_links()
 
+    if not links:
+        print("No notices found.")
+        return
+
     results = []
 
     for link in links:
 
         pdf_path = download_pdf(link)
 
+        if not pdf_path:
+            continue
+
         result = process_notice(pdf_path)
 
-        # normalize structure
         notice = normalize_notice(result)
 
         results.append(notice)
@@ -126,7 +143,6 @@ def main():
 
         print(notice)
 
-    # save JSON dataset
     save_results(results)
 
     print("\n===== PIPELINE COMPLETE =====\n")
