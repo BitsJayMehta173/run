@@ -53,6 +53,8 @@ Structured JSON Dataset
 
 ## 📁 Project Structure
 
+
+```
 project/
 
 run_pipeline.py
@@ -77,36 +79,42 @@ notices_data.json
 requirements.txt
 .env
 README.md
-
+```
 ---
 
 ## ⚙️ Installation
 
 ### 1. Clone repository
 
-git clone <your-repo-url>
+```
+git clone https://github.com/BitsJayMehta173/run
 cd project
+```
 
 ---
 
 ### 2. Create virtual environment
-
+```
 python -m venv venv
-
+```
 Activate:
 
 Windows:
+```
 venv\Scripts\activate
+```
 
 Linux / Mac:
+```
 source venv/bin/activate
+```
 
 ---
 
 ### 3. Install dependencies
-
+```
 pip install -r requirements.txt
-
+```
 ---
 
 ## 🔧 External Dependencies
@@ -117,7 +125,9 @@ Download:
 https://github.com/UB-Mannheim/tesseract/wiki
 
 Verify:
+```
 tesseract --version
+```
 
 ---
 
@@ -139,21 +149,21 @@ GROQ_API_KEY=your_api_key_here
 ---
 
 ## ▶️ Running the Pipeline
-
+```
 python run_pipeline.py
-
+```
 ---
 
 ## 📊 Output
 
 The pipeline generates:
-
+```
 notices_data.json
-
+```
 ---
 
 ### Example Output
-
+```
 {
   "file": "notice.pdf",
   "type": "exam",
@@ -167,7 +177,7 @@ notices_data.json
   "description": "The Public Service Commission has published an examination notice for administrative services.",
   "source_pdf": "notices/notice.pdf"
 }
-
+```
 ---
 
 ## 📈 Use Cases
